@@ -15,7 +15,7 @@
     }
 (this, function () {
 
-    var domtoimage = importScripts("domtoimage");
+    var domtoimage = require('dom-to-image.js');
     var chartist2image = {
         vaersion: "0.0.1"
     };
