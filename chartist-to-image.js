@@ -13,7 +13,7 @@
             root["chartist2image"] = factory();
         }
     }
-)(this, function () {
+(this, function () {
 
     var domtoimage = importScripts("domtoimage");
     var chartist2image = {
@@ -43,4 +43,4 @@
 
     return chartist2image;
 
-});
+}));
