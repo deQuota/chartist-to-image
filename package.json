@@ -2,7 +2,7 @@
   "name": "chartist-to-image",
   "version": "1.0.5",
   "description": "Renders images from 'chartist' charts",
-  "main": "index.js",
+  "main": "chartist-to-image.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,4 +24,5 @@
   "dependencies": {
     "dom-to-image": "^2.6.0"
   }
+
 }
