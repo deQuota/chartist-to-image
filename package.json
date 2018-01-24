@@ -1,6 +1,6 @@
 {
   "name": "chartist-to-image",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Renders images from 'chartist' charts",
   "main": "chartist-to-image.js",
   "scripts": {
@@ -24,5 +24,4 @@
   "dependencies": {
     "dom-to-image": "^2.6.0"
   }
-
 }
