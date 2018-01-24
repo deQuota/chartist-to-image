@@ -1,0 +1,24 @@
+{
+  "name": "chartist-to-image",
+  "version": "1.0.0",
+  "description": "Renders images from 'chartist' charts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deQuota/chartist-to-image.git"
+  },
+  "keywords": [
+    "chartist",
+    "chart",
+    "images"
+  ],
+  "author": "Nisal Waduge (deQuota)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deQuota/chartist-to-image/issues"
+  },
+  "homepage": "https://github.com/deQuota/chartist-to-image#readme"
+}
