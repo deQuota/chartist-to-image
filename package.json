@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/deQuota/chartist-to-image/issues"
   },
-  "homepage": "https://github.com/deQuota/chartist-to-image#readme"
+  "homepage": "https://github.com/deQuota/chartist-to-image#readme",
+  "dependencies": {
+    "dom-to-image": "^2.6.0"
+  }
 }
