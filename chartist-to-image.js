@@ -21,25 +21,32 @@
         vaersion: "0.0.1"
     };
 
-    chartist2image.toJpeg = function (divId, options) {
+    chartist2image.toJpeg = function (divId, options, Chartist) {
         return new Promise(function (resolve, reject) {
+            console.log(Chartist);
+            console.log(typeof Chartist === 'undefined');
+            if (typeof Chartist !== 'undefined') {
+                Chartist.supportsForeignObject = false;
+            }
+
+
             domtoimage.toJpeg(document.getElementById(divId), {
-                quality: options.outputImage.quality||1,
-                bgcolor: options.outputImage.bgcolor||"#ffffff",
+                quality: options.outputImage.quality || 1,
+                bgcolor: options.outputImage.bgcolor || "#ffffff",
             })
                 .then(function (dataUrl) {
                         var img = new Image();
                         img.src = dataUrl;
                         if (options.download === true) {
                             var link = document.createElement("a");
-                            link.download = options.outputImage.name||'Chart Image' + "."+ options.format;
+                            link.download = options.outputImage.name || 'Chart Image' + "." + options.format;
                             link.href = dataUrl;
                             link.click();
                         }
-                        if(options.log === true)
-                            console.log('chartist-to-image :',{title: options.outputImage.name||'chartimage', content: img.src});
+                        if (options.log === true)
+                            console.log('chartist-to-image :', {title: options.outputImage.name || 'chartimage', content: img.src});
 
-                        resolve({title: options.outputImage.name||'cahrtimage', format: 'base64' ,content: img.src});
+                        resolve({title: options.outputImage.name || 'cahrtimage', format: 'base64', content: img.src});
                     },
                     function (error) {
 
