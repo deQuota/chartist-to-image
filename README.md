@@ -9,6 +9,7 @@ Generating chart images from "Chartist" charts was a bit of challange, but now b
 ## Usage
 Following will describes to how to use chartist-to-image on **Angular 2-5**,
 but also you can take insight from following to implement in js
+
 **Import**
 
  
