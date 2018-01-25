@@ -42,7 +42,6 @@ but also you can take insight from following to implement in js
     };
     let base64;
     async genImage(){
-    this.chartist2image = chartist2image;
     await chartist2image.toJpeg('pie-chart-content',options).then(
       (res) => {
         base64 = res;
