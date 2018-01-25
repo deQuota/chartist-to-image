@@ -4,7 +4,7 @@
   "description": "Renders images from 'chartist' charts",
   "main": "chartist-to-image.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,7 @@
   "dependencies": {
     "dom-to-image": "^2.6.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "^5.0.0"
+  }
 }
