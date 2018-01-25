@@ -1,4 +1,5 @@
-# chartist-to-image [![Build Status](https://travis-ci.org/deQuota/chartist-to-image.svg?branch=master)](https://travis-ci.org/deQuota/chartist-to-image)
+# chartist-to-image
+[![Build Status](https://travis-ci.org/deQuota/chartist-to-image.svg?branch=master)](https://travis-ci.org/deQuota/chartist-to-image)
 
 Generating chart images from "Chartist" charts was a bit of challange, but now by using this module you can render images of your chartist chart without any hassle.
 
