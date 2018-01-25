@@ -23,5 +23,6 @@
   "homepage": "https://github.com/deQuota/chartist-to-image#readme",
   "dependencies": {
     "dom-to-image": "^2.6.0"
-  }
+  },
+  "devDependencies": {}
 }
