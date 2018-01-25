@@ -23,8 +23,12 @@
 
     chartist2image.toJpeg = function (divId, options, Chartist) {
         return new Promise(function (resolve, reject) {
+            if (options.log === true){
             console.log(Chartist);
-            console.log(typeof Chartist === 'undefined');
+            }
+            if (options.log === true) {
+                console.log(typeof Chartist === 'undefined');
+            }
             if (typeof Chartist !== 'undefined') {
                 Chartist.supportsForeignObject = false;
             }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3da50c13-5381-4e60-9163-235113b11383" name="Default" comment="" />
+    <list default="true" id="3da50c13-5381-4e60-9163-235113b11383" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,7 +19,7 @@
       <file leaf-file-name="chartist-to-image.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chartist-to-image.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
+            <state relative-caret-position="1310">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
@@ -40,8 +42,8 @@
             <state relative-caret-position="68">
               <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding>
-                <marker date="1516865044675" expanded="true" signature="0:684" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
-                <marker date="1516865044675" expanded="true" signature="623:682" ph="{&quot;dom-to-image&quot;: &quot;^2.6.0&quot;...}" />
+                <marker date="1516872219645" expanded="true" signature="0:684" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
+                <marker date="1516872219645" expanded="true" signature="623:682" ph="{&quot;dom-to-image&quot;: &quot;^2.6.0&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -53,8 +55,8 @@
             <state relative-caret-position="204">
               <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
-                <marker date="1516865044759" expanded="true" signature="0:319" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
-                <marker date="1516865044759" expanded="true" signature="117:124" ph="{...}" />
+                <marker date="1516872219674" expanded="true" signature="0:319" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
+                <marker date="1516872219674" expanded="true" signature="117:124" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -184,16 +186,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516780651294</updated>
-      <workItem from="1516780653289" duration="14777000" />
+      <workItem from="1516780653289" duration="16045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14777000" />
+    <option name="totallyTimeSpent" value="16045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-431" width="1936" height="1066" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -238,8 +239,8 @@
         <state relative-caret-position="204">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <marker date="1516865044759" expanded="true" signature="0:319" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
-            <marker date="1516865044759" expanded="true" signature="117:124" ph="{...}" />
+            <marker date="1516872219674" expanded="true" signature="0:319" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
+            <marker date="1516872219674" expanded="true" signature="117:124" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -257,8 +258,8 @@
         <state relative-caret-position="68">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding>
-            <marker date="1516865044675" expanded="true" signature="0:684" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
-            <marker date="1516865044675" expanded="true" signature="623:682" ph="{&quot;dom-to-image&quot;: &quot;^2.6.0&quot;...}" />
+            <marker date="1516872219645" expanded="true" signature="0:684" ph="{&quot;name&quot;: &quot;chartist-to-image&quot;...}" />
+            <marker date="1516872219645" expanded="true" signature="623:682" ph="{&quot;dom-to-image&quot;: &quot;^2.6.0&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -273,7 +274,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chartist-to-image.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
+        <state relative-caret-position="1310">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
