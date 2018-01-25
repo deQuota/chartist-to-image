@@ -64,7 +64,7 @@ Currently chartist-to-image generates only .jpeg's, but in future we will add ot
 |  Attribute              |                Default        |Other                         |
 |----------------|-------------------------------|-----------------------------|
 |outputImage|**json** Attributes **quality: 1.00**,**bgcolor: '#000000'**, **name: 'Chart Image'**    |'**quality**: 0-1 **bgcolor**: {#anyColor} **name**: {your's name to chart}             |
-|format         |`.jpeg           |More formats in further releases          |
+|format         |.jpeg           |More formats in further releases          |
 |download          |true **auto download the image after rendering**|false|
 
 
