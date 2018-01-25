@@ -29,6 +29,7 @@ but also you can take insight from following to implement in js
     import chartist2image from 'chartist-to-image';
 **Calling**
 
+
 	let options = {
       outputImage: {
         quality: 0.35,
@@ -42,7 +43,7 @@ but also you can take insight from following to implement in js
     };
     let base64;
     async genImage(){
-    await chartist2image.toJpeg('pie-chart-content',options).then(
+    await chartist2image.toJpeg(**HTML div ID which contains chartist chart**,options).then(
       (res) => {
         base64 = res;
         console.log('Logged >>>>>>>>',base64);
