@@ -6,19 +6,6 @@ Generating chart images from "Chartist" charts was a bit of challange, but now b
 # Installation
 > npm i chartist-to-image 
 
-## Attention!
-
-Most of the image rendering packages not compatible with "Chartist" because
-chartist uses  <**foreignObject**> in their svgs. 
-So becuase of that you have to replace <**foreignObject**> by using  <**text**>
-**This can be easily done** like,
- >  var chartistLineChart = new Chartist.Line('.ct-chart', data, options);
-   > chartistLineChart.**supportsForeignObject = false**; 
-
-if you are using angular 2-5
-> this.chartistLineChart = new Chartist.Line('.ct-chart', data, options);
->    this.chartistLineChart.supportsForeignObject = **false**; 
-
 ## Usage
 Following will describes to how to use chartist-to-image on **Angular 2-5**,
 but also you can take insight from following to implement in js
@@ -29,7 +16,7 @@ but also you can take insight from following to implement in js
     import chartist2image from 'chartist-to-image';
 **Calling**
 
-
+    chartistChart = new Chartist.Line/Pie('chart name',data,options);
 	let options = {
       outputImage: {
         quality: 0.35,
@@ -43,7 +30,8 @@ but also you can take insight from following to implement in js
     };
     let base64;
     async genImage(){
-    await chartist2image.toJpeg(**HTML div ID which contains chartist chart**,options).then(
+    this.chartist2image = chartist2image;
+    await chartist2image.toJpeg('**HTML div ID which contains chartist chart**',options,chartistChart).then(
       (res) => {
         base64 = res;
         console.log('Logged >>>>>>>>',base64);
@@ -58,6 +46,32 @@ like
     <img src="{{base64-string}}"><img>
 Currently chartist-to-image generates only .jpeg's, but in future we will add other formats as well.
 
+
+## Attention!
+**(if you are passing the Chartist instance to chartist2image.toJpeg() you don't want to worry about this)**
+Most of the image rendering packages not compatible with "Chartist" because
+chartist uses  <**foreignObject**> in their svgs. 
+So becuase of that you have to replace <**foreignObject**> by using  <**text**>
+**This can be easily done** like,
+ >  var chartistLineChart = new Chartist.Line('.ct-chart', data, options);
+   > chartistLineChart.supportsForeignObject = **false**; 
+
+if you are using angular 2-5
+> this.chartistLineChart = new Chartist.Line('.ct-chart', data, options);
+>    this.chartistLineChart.supportsForeignObject = **false**; 
+
+**Or** you can pass your Chartist chart instance to chartist2image function, it will do that for you.
+
+    chartistChart = new Chartist.Line/Pie('chart name',data,options);
+    async genImage(){
+    this.chartist2image = chartist2image;
+    await chartist2image.toJpeg('pie-chart-content',options,chartistChart).then(
+    (res) => {
+    base64 = res;
+    console.log('Logged >>>>>>>>',base64)
+    });}
+    
+
 ## Options
 
 'chartist-to-image' accepts a 'json' object which is having following attributes
@@ -65,7 +79,5 @@ Currently chartist-to-image generates only .jpeg's, but in future we will add ot
 |  Attribute              |                Default        |Other                         |
 |----------------|-------------------------------|-----------------------------|
 |outputImage|**json** Attributes **quality: 1.00**,**bgcolor: '#000000'**, **name: 'Chart Image'**    |'**quality**: 0-1 **bgcolor**: {#anyColor} **name**: {your's name to chart}             |
-|format         |.jpeg           |More formats in further releases          |
+|format         |`.jpeg           |More formats in further releases          |
 |download          |true **auto download the image after rendering**|false|
-
-
