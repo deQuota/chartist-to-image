@@ -12,38 +12,63 @@
     } else {
         root["chartist2image"] = factory();
     }
-}(this, function () {
+}
+(this, function () {
 
 
-    (function (window, document) {
-        'use strict';
+    var domtoimage = require('dom-to-image');
+    var chartist2image = {
+        vaersion: "0.0.1"
+    };
 
-
-        var domtoimage = require('dom-to-image');
-        var chartist2image = {
-            vaersion: "0.0.1"
-        };
-
-        chartist2image.toJpeg = function (divID) {
-            domtoimage.toJpeg(document.getElementById(divID), {quality: 0.95, bgcolor: "#ffffff"})
+    chartist2image.toJpeg = function (divId, options) {
+        return new Promise(function (resolve, reject) {
+            domtoimage.toJpeg(document.getElementById(divId), {
+                quality: options.outputImage.quality||1,
+                bgcolor: options.outputImage.bgcolor||"#ffffff",
+            })
                 .then(function (dataUrl) {
                         var img = new Image();
                         img.src = dataUrl;
-                        document.body.appendChild(img);
-                        var link = document.createElement("a");
-                        link.download = divID + ".jpeg";
-                        link.href = dataUrl;
-                        link.click();
-                        console.log({title: "pie-chart", content: img.src});
+                        if (options.download === true) {
+                            var link = document.createElement("a");
+                            link.download = options.outputImage.name||'Chart Image' + "."+ options.format;
+                            link.href = dataUrl;
+                            link.click();
+                        }
+                        if(options.log === true)
+                            console.log('chartist-to-image :',{title: options.outputImage.name||'chartimage', content: img.src});
 
-
+                        resolve({title: options.outputImage.name||'cahrtimage', format: 'base64' ,content: img.src});
                     },
                     function (error) {
 
-                        console.log("Error occurred while rendering the Graph >>>>", error);
+                        console.error("Error occurred while rendering the Graph >>>>", error);
+                        reject(error);
                     });
-        };
-    }(window, document));
+        });
+
+        /*domtoimage.toJpeg(document.getElementById(divId), {quality: options.outputImage.quality, bgcolor: options.outputImage.bgcolor})
+          .then(function (dataUrl) {
+              var img = new Image();
+              img.src = dataUrl;
+              if(options.download === true) {
+              var link = document.createElement("a");
+              link.download = options.outputImage.name + ".jpeg";
+              link.href = dataUrl;
+              link.click();
+              }
+              console.log({title: divId, content: img.src});
+
+              return {title: divId, content: img.src};
+
+
+            },
+            function (error) {
+
+              console.log("Error occurred while rendering the Graph >>>>", error);
+            });*/
+    };
 
     return chartist2image;
 
