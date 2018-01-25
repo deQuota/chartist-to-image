@@ -43,7 +43,7 @@ It is better to use chartist-to-image with **async** and **wait** since it takes
 After it generates the 'base64' value you can easily use it on an HTML
 like 
 
-    <img src="{{base64-string}}"><img>
+    <img src=base64-string><img>
 Currently chartist-to-image generates only .jpeg's, but in future we will add other formats as well.
 
 
