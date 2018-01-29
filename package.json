@@ -21,9 +21,7 @@
     "url": "https://github.com/deQuota/chartist-to-image/issues"
   },
   "homepage": "https://github.com/deQuota/chartist-to-image#readme",
-  "dependencies": {
-    "dom-to-image": "^2.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "^5.0.0"
   }
