@@ -1,6 +1,6 @@
 {
   "name": "chartist-to-image",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Renders images from 'chartist' charts",
   "main": "chartist-to-image.js",
   "scripts": {
