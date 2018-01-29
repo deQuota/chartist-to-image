@@ -5,7 +5,7 @@ Generating chart images from "Chartist" charts was a bit of challange, but now b
 
 
 # Installation
-> npm i chartist-to-image --save
+> npm install chartist-to-image --save
 
 ## Usage
 Following will describes to how to use chartist-to-image on **Angular 2-5**,
