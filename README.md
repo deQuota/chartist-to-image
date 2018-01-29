@@ -83,3 +83,6 @@ if you are using angular 2-5
 |outputImage|**json** Attributes **quality: 1.00**,**bgcolor: '#000000'**, **name: 'Chart Image'**    |'**quality**: 0-1 **bgcolor**: {#anyColor} **name**: {your's name to chart}             |
 |format         |`.jpeg           |More formats in further releases          |
 |download          |true **auto download the image after rendering**|false|
+
+## Credits
+The rendering of the image done suing 'dom-to-image' library. It is a great module to render images from HTML and SVGs. 'chartist-to-image' has been modified according to support for Chartist charts rendering. Since the source is embedded to this module, you don't have to download it as a dependency.
