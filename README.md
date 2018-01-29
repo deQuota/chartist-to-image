@@ -16,6 +16,9 @@ but also you can take insight from following to implement in js
  
  
     import chartist2image from 'chartist-to-image';
+    or
+    import * as chartist2image from 'chartist-to-image';
+    
 **Calling**
 
     chartistChart = new Chartist.Line/Pie('chart name',data,options);
