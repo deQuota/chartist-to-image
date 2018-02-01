@@ -23,7 +23,7 @@ but also you can take insight from following to implement in js
     
 **Calling**
 
-    chartistChart = new Chartist.Line/Pie('chart name',data,options);
+    chartistChart = new Chartist.Line/Pie('chart name',data,chartOptions);
 	let options = {
       outputImage: {
         quality: 0.35,
